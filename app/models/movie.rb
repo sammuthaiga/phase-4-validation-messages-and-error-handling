@@ -1,4 +1,4 @@
-class Movie < ApplicationRecord
+
     class Movie < ApplicationRecord
   CATEGORIES = ['Comedy', 'Drama', 'Animation', 'Mystery', 'Horror', 'Fantasy', 'Action', 'Documentary', 'Science Fiction']
 
@@ -12,6 +12,4 @@ class Movie < ApplicationRecord
     in: CATEGORIES,
     message: "must be one of: #{CATEGORIES.join(', ')}"
   }
-
-end
 end
